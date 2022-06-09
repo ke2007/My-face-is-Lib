@@ -1,6 +1,10 @@
 # Books Review html with Create React App
 <hr></hr>
 
+## 06-10
+#### 07:45
+### 모달창생성, 모달css작업완료
+
 ## 05-29
 #### 22:00
 ### img에 mousehover시 커지는 애니메이션 적용
@@ -16,6 +20,3 @@
 ### S3 버켓에 있는 이미지 Url을 Books.json에 추가하고 홈페이지에 이미지까지 띄움.
 ### React Route설치 후 화면 전환 까지 제작.
 
-## 06-10
-#### 07:45
-### 모달창생성, 모달css작업완료
