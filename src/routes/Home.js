@@ -29,7 +29,7 @@ function Home() {
                 onClick={openModal}
                 onMouseDown={onc}
                 className={styles.Book__img}
-                width="200"
+                width={"200"}
                 height="300"
               />
               <div className={styles.Book__title}>"{books.Name}"</div>
