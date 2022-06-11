@@ -72,6 +72,7 @@
     0 8px 26px -8px rgb(0 0 0 / 30%);
 }
 .Book__img {
+  transition: all 0.2s linear;
   position: relative;
   border: 9px solid #ffa79d;
   top: 17px;
@@ -84,12 +85,14 @@
 }
 
 .Book__year {
+  transition: all 0.02s linear;
   margin: 0;
   font-weight: 300;
   text-decoration: none;
 }
 
 .Book__title {
+  transition: all 0.09s linear;
   display: flex;
   margin-right: 0px;
   margin-top: -4px;
@@ -97,13 +100,14 @@
   border-radius: 13px;
   font-family: "Jua", sans-serif;
   font-size: 30px;
-  color: #6a0b0bd0;
+  color: #000000d0;
   text-decoration: none;
   box-shadow: 8px 11px 2px 2px rgb(55 126 185 / 30%);
   float: unset;
 }
 
 .Book__genres {
+  transition: all 0.09s linear;
   position: relative;
   left: 14px;
   top: 60px;
@@ -119,6 +123,7 @@
   border-radius: 10px;
 }
 .Book__year {
+  transition: all 0.2s linear;
   list-style: none;
   padding: 0px;
   margin: 0;
@@ -136,7 +141,7 @@
 }
 .Book__title:hover {
   transform: scale(1.1);
-  color: #3f3aba;
+  color: #24248d;
 }
 .Book__year:hover {
   transform: scale(1.1);
@@ -151,6 +156,7 @@
   color: #61c46b;
 }
 .Book__review {
+  transition: all 0.2s linear;
   position: relative;
   left: 14px;
   top: -32px;
@@ -310,11 +316,12 @@
 }
 
 .Title {
+  transition: all 0.2s linear;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  color: #3f3aba;
+  color: #1e1e24;
   background-color: #acf1eb;
   width: 100%;
   overflow: auto;
@@ -343,7 +350,6 @@
   margin-top: 90px;
 }
 .list {
-  animation: modal-show 1.3s;
   margin-bottom: -5px;
   border-bottom: 1px solid #62aaaa;
   font-size: 20px;
@@ -402,4 +408,11 @@
 }
 .Modalimg {
   float: left;
+}
+.Modalimg2 {
+  animation: modal-show 1.3s;
+  border-radius: 15px;
+  border: 5px solid rgb(22, 218, 218);
+  margin-left: 40px;
+  top: -40px;
 }

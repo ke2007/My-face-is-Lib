@@ -13,10 +13,16 @@ function Home() {
     event.preventDefault();
     setModalState(false);
   };
+
   const [Title, setTitle] = useState("");
   const onc = (event) => {
     setTitle(event.target.alt);
   };
+  const [srcImg, setImgsrc] = useState("");
+  const onc2 = (event) => {
+    setImgsrc(event.target.src);
+  };
+
   return (
     <div className={styles.Booka}>
       {books.map((books) => (
@@ -28,8 +34,9 @@ function Home() {
                 alt={books.Name}
                 onClick={openModal}
                 onMouseDown={onc}
+                onMouseEnter={onc2}
                 className={styles.Book__img}
-                width={"200"}
+                width="200"
                 height="300"
               />
               <div className={styles.Book__title}>"{books.Name}"</div>
@@ -61,7 +68,12 @@ function Home() {
         </div>
       ))}
       <div>
-        <Modal data={Title} state={modalState} closeModal={closeModal} />
+        <Modal
+          srcImg={srcImg}
+          data={Title}
+          state={modalState}
+          closeModal={closeModal}
+        />
       </div>
     </div>
   );

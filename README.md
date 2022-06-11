@@ -1,14 +1,10 @@
 # Books Review html with Create React App
 <hr></hr>
 
-## 06-10
-#### 08:11
-### 모달 내부에 댓글기능 작업
-
-
 ## 05-29
 #### 22:00
 ### img에 mousehover시 커지는 애니메이션 적용
+
 
 
 ## 05-28

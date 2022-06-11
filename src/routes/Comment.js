@@ -67,4 +67,4 @@ export class Comment extends Component {
     );
   }
 }
-export default Comment;
+export default React.memo(Comment);

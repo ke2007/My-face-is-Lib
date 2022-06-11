@@ -7,7 +7,7 @@ import booksjson from "./Books.json";
 
 const Modal = (props) => {
   const [books] = useState(booksjson);
-  const { data, state, closeModal } = props;
+  const { srcImg, data, state, closeModal } = props;
 
   return state ? (
     <div className={styles.Container}>
@@ -19,22 +19,17 @@ const Modal = (props) => {
             X
           </div>
         </div>
-        <div /*내용 div*/>
-          {data === books.Name ? (
-            <div>
-              <img
-                src={books.Img}
-                alt={books.Name}
-                className={styles.Book__img}
-                width="200"
-                height="300"
-              />
-            </div>
-          ) : null}
-          <div className={styles.modalreview}>
-            <div className={styles.Modalimg}></div>
-            <Comment className={styles.Commentdiv} />
+        <div className={styles.modalreview}>
+          <div className={styles.Modalimg}>
+            <img
+              className={styles.Modalimg2}
+              src={srcImg}
+              alt="이미지가없어요"
+              width="300px"
+              height="400px"
+            />
           </div>
+          <Comment className={styles.Commentdiv} />
         </div>
       </div>
     </div>
@@ -44,6 +39,7 @@ const Modal = (props) => {
 };
 
 Modal.propTypes = {
+  srcImg: PropTypes.string.isRequired,
   data: PropTypes.string.isRequired,
   state: PropTypes.bool.isRequired,
   closeModal: PropTypes.func.isRequired,
