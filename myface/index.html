@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 얼굴은 도서관</title>
+    <link rel="stylesheet" href="style-s.css" />
+  </head>
+  <body>
+    <div class="container1">
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="index.html">내 얼굴은 도서관 !</a>
+        </div>
+
+        <ul class="navbar__menu" href="#">
+          <li><a href="http://15.164.11.11:3000/">독후감 쓰러가기 !</a></li>
+        </ul>
+      </nav>
+      <div class="main">
+        <h2>내 얼굴은 도서관 !</h2>
+        <br />
+        <br />
+        <br />
+        <p>내 얼굴사진을 찍어서 책을 추천 받아보자 !</p>
+        <br />
+        <br />
+        <button id="btn-Modal">사용방법</button>
+        <br />
+        <button class="btn2">시작하기</button>
+      </div>
+    </div>
+
+    <div id="modal" class="modal-overlay">
+      <div class="modal-window">
+        <div class="title">
+          <h1>사용 방법</h1>
+        </div>
+        <div class="close-area">X</div>
+        <div class="content">
+          <br />
+          <p>첫번째. 다음 화면에서 카메라에 비친 내 얼굴을 보면서</p>
+          <p>지금 내가 느끼고 있는 기분을 표현해주세요.</p>
+          <p>조금 기다리면 내 기분을 분석해서 책을 추천해 줄거에요</p>
+          <br />
+          <br />
+          <br />
+          <p>두번째. 내 기분을 점수로 알려줘요 그리고 추천된 책이</p>
+          <p>마음에 드는지 확인해주세요.</p>
+          <br />
+          <br />
+          <br />
+          <p>
+            세번째. 책을 읽고나서 다른 친구들에게도 이 책이 어떤지 한줄평을
+            써주세요.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById("modal");
+
+      function modalOn() {
+        modal.style.display = "flex";
+      }
+
+      function isModalOn() {
+        return modal.style.display === "flex";
+      }
+
+      function modalOff() {
+        modal.style.display = "none";
+      }
+
+      const btnModal = document.getElementById("btn-Modal");
+      btnModal.addEventListener("click", (e) => {
+        modal.style.display = "flex";
+        modalOn();
+      });
+
+      const closeBtn = modal.querySelector(".close-area");
+      closeBtn.addEventListener("click", (e) => {
+        modal.style.display = "none";
+        modalOff();
+      });
+
+      modal.addEventListener("click", (e) => {
+        const evTarget = e.target;
+        if (evTarget.classList.contains("modal-overlay")) {
+          modalOff();
+        }
+      });
+
+      window.addEventListener("keyup", (e) => {
+        if (isModalOn() && e.key === "Escape") {
+          modalOff();
+        }
+      });
+    </script>
+  </body>
+</html>
