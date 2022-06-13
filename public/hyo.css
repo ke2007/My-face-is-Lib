@@ -1,0 +1,169 @@
+@font-face {
+  src: url("./SDChildfundkoreaTTF.ttf");
+  font-family: abc;
+}
+* {
+  font-family: abc;
+}
+
+body {
+  height: 100%;
+  background: url(./back.jpg);
+  background-size: cover;
+}
+
+body > .menu {
+  height: 10vh;
+  animation: g-show 1.3s;
+}
+
+body > .menu > .p1 {
+  float: right;
+  margin-right: 3%;
+  font-size: 4vmin;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body > .menu > .p2 {
+  float: left;
+  margin-left: 3%;
+  font-size: 5vmin;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body > .box {
+  height: 85vh;
+  padding: 4.3%;
+  border: 5px solid rgb(243 208 124);
+  background-color: rgb(14 21 30 / 81%);
+  box-sizing: border-box;
+  color: #fffad6;
+}
+
+body > .box > .profle {
+  width: 30%;
+  height: 100%;
+  float: left;
+  border: 4px solid #e8e5d066;
+  box-sizing: border-box;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.Graph {
+  display: inline-block !important;
+  min-width: 150px !important;
+  min-height: 150px !important;
+  max-width: 190%;
+  max-height: 180%;
+  background-color: rgb(255 255 255) !important;
+  width: 100% !important;
+  height: 160% !important;
+  margin: 0px;
+  border-radius: 4px !important;
+  border: 4px solid rgb(255 215 85 / 54%) !important;
+  z-index: 9;
+  animation: g-show 0.9s;
+}
+body > .box > .profle > .profleimg {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+}
+
+body > .box > .profle > .profleimg > img {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+body > .box > .profle > .emotion {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 15px;
+}
+
+body > .box > .profle > .emotion > p {
+  font-size: 3vmin;
+}
+
+body > .box > .book {
+  width: 70%;
+  height: 100%;
+  float: right;
+}
+
+body > .box > .book > .booklist {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+body > .box > .book > .booklist img {
+  width: 80%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.booklist1 {
+  width: 25%;
+  height: 100%;
+  float: left;
+  border: 2px solid #e8e5d066;
+  box-sizing: border-box;
+}
+
+.bookimg {
+  width: 100%;
+  height: 50%;
+  padding: 1%;
+  text-align: center;
+  animation: g-show 1.6s;
+}
+
+.bookinformaiton {
+  width: 100%;
+  height: 50%;
+  padding: 1%;
+}
+
+.bookinformaiton > p {
+  font-size: 3vmin;
+  text-align: center;
+  animation: g-show 0.9s;
+}
+
+.bookimg > img {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.myface {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 70%;
+  margin-top: 5px;
+  animation: g-show 1.3s;
+  border: 1px solid wheat;
+  border-radius: 15px;
+}
+
+.graphDiv {
+  padding-right: 2px;
+  animation: g-show 1.4s;
+}
+
+@keyframes g-show {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
