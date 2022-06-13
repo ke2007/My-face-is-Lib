@@ -1,12 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import styles from "./Home.module.css";
 import PropTypes from "prop-types";
 import Comment from "./Comment";
-import booksjson from "./Books.json";
 
 const Modal = (props) => {
-  const [books] = useState(booksjson);
   const { srcImg, data, state, closeModal } = props;
 
   return state ? (

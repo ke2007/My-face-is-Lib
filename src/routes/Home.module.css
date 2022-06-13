@@ -54,14 +54,13 @@
     #ff8f73,
     #ff827b,
     #fc7486,
-    #f46993,
-    #6b37dc,
-    #3f3aba
+    #b64e6d,
+    #523299,
+    #1e2631
   );
-  margin-top: 130px;
+  margin-top: 0px;
   font-weight: 20;
   padding: 30px;
-  border-radius: 5px;
   color: #000001;
   display: grid;
   grid-template-columns: minmax(3px, 0.9fr) 1fr;
@@ -84,7 +83,7 @@
   float: left;
 }
 
-.Book__year {
+.Book__word {
   transition: all 0.02s linear;
   margin: 0;
   font-weight: 300;
@@ -106,7 +105,7 @@
   float: unset;
 }
 
-.Book__genres {
+.Book__writer {
   transition: all 0.09s linear;
   position: relative;
   left: 14px;
@@ -122,7 +121,7 @@
   margin-right: 0px;
   border-radius: 10px;
 }
-.Book__year {
+.Book__word {
   transition: all 0.2s linear;
   list-style: none;
   padding: 0px;
@@ -143,11 +142,11 @@
   transform: scale(1.1);
   color: #24248d;
 }
-.Book__year:hover {
+.Book__word:hover {
   transform: scale(1.1);
   color: #daea2b;
 }
-.Book__genres:hover {
+.Book__writer:hover {
   transform: scale(1.1);
   color: #9734d1;
 }

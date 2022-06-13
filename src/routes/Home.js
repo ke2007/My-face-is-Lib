@@ -41,10 +41,10 @@ function Home() {
               />
               <div className={styles.Book__title}>"{books.Name}"</div>
               <div className={styles.li}>
-                <div className={styles.Book__genres}>
+                <div className={styles.Book__writer}>
                   지은이 : {books.Writer}
                 </div>
-                <div className={styles.Book__year}>
+                <div className={styles.Book__word}>
                   <ul>
                     {books.Word.map((W) => (
                       <li key={W}>핵심단어 : {W}</li>
